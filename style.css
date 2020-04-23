@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    background-image: url(img/bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    font-family: Asap;
+    color: rgba(242, 242, 242, 0.9);
+/*    min-width:100vw;*/
+    min-height:100vh;
+}
+header{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    background-color: rgba(4, 2, 2, 0.8);
+/*    width: 100vw;*/
+    padding: 1rem;
+}
+
+main{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: solid 1rem;
+/*    margin: 1rem;*/
+    padding: 1rem;
+    background-color: rgba(3, 1, 1, 0.4);
+    min-width: 90vmin;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: Roboto;
+    font-size: 0.8rem;
+}
+footer{
+    background-color: rgba(4, 1, 2, 0.8);
+    padding: 1rem;
+}
+#title{
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+}
+#description{
+    letter-spacing: 1rem;
+}
+#tagline{
+    font-size: 0.1rem;
+    letter-spacing: 0.2rem;
+}
+#name-label, #email-label, #number-label, #hear, #improve{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+#streaming{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.1rem;
+    font-size: 0.8rem;
+}
+#streaming>label{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: baseline;
+    grid-gap: 0.9rem;
+}
+#genre{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8rem;
+}
+#genre>label{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: baseline;
+    grid-gap: 0.9rem;
+}
+textarea, input[type="text"],input[type="email"],input[type="number"],#dropdown,button{
+    font-family: Roboto;
+    padding: 0.5em;
+    font-size: 0.8rem;
+    background-color: rgba(242, 242, 242, 0.9);
+    color: rgba(4, 2, 2, 0.8);
+}
+label:hover,#improve:hover,#hear:hover,button:hover{
+    background-color: rgba(4, 2, 2, 0.4);
+    color:rgba(242, 242, 242, 0.8);
+
+}
+/*
+#streaming>label:hover,
+#genre>label:hover
+{
+    font-size: 0.9rem;
+}
+*/
+input:checked+.label-span{
+    
+    background-color: rgba(4, 2, 2, 0.2);
+    color:rgba(242, 242, 242, 1);
+    width:6vw;
+    padding:0 1rem;
+    font-size: 0.8rem;
+}
+
+textarea{
+    height:2rem;
+    max-height: 2rem;
+    min-height: 2rem;
+    max-width: 90vw;
+    min-width: inherit;
+}
+/*
+input[type="radio"],input[type="checkbox"] {
+    color: rgba(242, 242, 242, 0.9);
+}
+*/

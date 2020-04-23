@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fireball Customer Survey</title>
+    <link rel="stylesheet" href="style.css" class="css">
+<!--    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+</head>
+<body>
+    <header>
+        <h1 id="title">+fireball entertainment</h1>
+        <p id="description">./customer survey form 2020</p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name
+                <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+            </label>
+            <label for="name" id="email-label">Email
+                <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+            </label>
+            <label for="age" id="number-label">Age
+                <input type="number" id="number" name="age" min="18" max="99" placeholder="Select Age">
+            </label>
+
+            <p id="hear">How did you hear about us
+                <select name="exposure" id="dropdown">
+                    <option value="">Please select one</option>
+                    <option value="internet">Internet</option>
+                    <option value="friends">Friends</option>
+                    <option value="streaming-apps">Streaming Apps</option>
+                    <option value="record-store">Record Store</option>
+                    <option value="television">Television</option>
+                    <option value="radio">Radio</option>
+                </select>
+            </p>
+
+            <p id="streaming-container">Select your preferred streaming site
+            <div id="streaming">
+                <label for="spotify">
+                <input type="radio" name="streaming-site" id="spotify" value="spotify">
+                <span class="label-span">Spotify</span>
+                </label>
+
+                <label for="apple-music">
+                <input type="radio" name="streaming-site" id="apple-music" value="apple-music">
+                <span class="label-span">Apple Music</span>
+                </label>
+
+                <label for="itunes">
+                <input type="radio" name="streaming-site" id="itunes" value="itunes">
+                <span class="label-span">iTunes</span>
+                </label>
+
+                <label for="tidal">
+                <input type="radio" name="streaming-site" id="tidal" value="tidal">
+                <span class="label-span">Tidal</span>
+                </label>
+            </div>
+            </p>  
+
+            <p>Select your preferred genre
+               <div id="genre">
+                <label for="rock">
+                    <input type="checkbox" name="genre" id="rock" value="rock">
+                    <span class="label-span">Rock</span>
+                </label>
+
+                <label for="pop">
+                    <input type="checkbox" name="genre" id="pop" value="pop">
+                    <span class="label-span">Pop</span>
+                </label>
+
+                <label for="electronic">
+                    <input type="checkbox" name="genre" id="electronic" value="electronic">
+                    <span class="label-span">Electronic</span>
+                </label>
+
+                <label for="rnb">
+                    <input type="checkbox" name="genre" id="rnb" value="rnb">
+                    <span class="label-span">RnB</span>
+                </label>
+
+                <label for="hip-hop">
+                    <input type="checkbox" name="genre" id="hip-hop" value="hip-hop">
+                    <span class="label-span">Hip-Hop</span>
+                </label>
+
+                <label for="dance">
+                    <input type="checkbox" name="genre" id="dance" value="dance">
+                    <span class="label-span">Dance</span>
+                </label>
+                </div>
+            </p>
+
+            <p id="improve">Let us know how we can improve
+                <textarea name="customer-service" id="customer-service" cols="30" rows="10" placeholder="We'd love to hear from you"></textarea>
+            </p>
+    </br>
+            <button type="submit" id="submit">Submit Me!</button>
+        </form>
+     </main>
+     <footer>
+         <p id="tagline">.entertainment re_imagined</p>
+     </footer>
+</body>
+</html>
