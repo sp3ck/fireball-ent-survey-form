@@ -7,8 +7,9 @@ html{
     background-image: url(img/bg-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; filter:brightness(1.25)contrast(1.1);
 }
+
 body{
     display:flex;
     flex-direction:column;
@@ -27,23 +28,22 @@ header{
 /*    width: 100vw;*/
     padding: 1rem;
 }
-
 main{
     display:flex;
     flex-direction:row;
     justify-content: space-around;
 }
-
 form{
     display: flex;
     flex-direction: column;
     border: solid 1rem;
-/*    margin: 1rem;*/
-    padding: 1rem;
+    justify-self:space-around;
+/*    margin: 1.5rem;*/
+    padding: 1.2rem;
     background-color: rgba(3, 1, 1, 0.4);
-    min-width: 90vmin;
+    min-width: 100vmin;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.3rem;
     font-family: Roboto;
     font-size: 0.8rem;
 }
@@ -97,27 +97,24 @@ textarea, input[type="text"],input[type="email"],input[type="number"],#dropdown,
     background-color: rgba(242, 242, 242, 0.9);
     color: rgba(4, 2, 2, 0.8);
 }
-label:hover,#improve:hover,#hear:hover,button:hover{
-    background-color: rgba(4, 2, 2, 0.4);
-    color:rgba(242, 242, 242, 0.8);
-
-}
-/*
-#streaming>label:hover,
-#genre>label:hover
-{
-    font-size: 0.9rem;
-}
-*/
 input:checked+.label-span{
-    
     background-color: rgba(4, 2, 2, 0.2);
     color:rgba(242, 242, 242, 1);
     width:6vw;
     padding:0 1rem;
     font-size: 0.8rem;
+    border-radius: 5%;
 }
-
+label:hover,#improve:hover,#hear:hover,button:hover{
+    animation-name: animate;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes animate {
+    100% {
+    background-color: rgba(4, 2, 2, 0.4);
+    color:rgba(242, 242, 242, 0.8);
+    }
 textarea{
     height:2rem;
     max-height: 2rem;
@@ -125,8 +122,3 @@ textarea{
     max-width: 90vw;
     min-width: inherit;
 }
-/*
-input[type="radio"],input[type="checkbox"] {
-    color: rgba(242, 242, 242, 0.9);
-}
-*/
